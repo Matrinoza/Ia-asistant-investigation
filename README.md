@@ -70,10 +70,15 @@ Optionally, results can be stored in .txt files or databases.
 
 Ia-asistant-investigation/
 │
+
 ├── main.py              # Entry point
+
 ├── tool.py              # Helper functions
+
 ├── requirements.txt     # Dependencies
+
 ├── .env.example         # Environment variable template
+
 └── README.md            # Documentation
 
 
@@ -84,7 +89,7 @@ Ia-asistant-investigation/
 - Optional web interface
 
 
-#👨‍💻 Author
+# 👨‍💻 Author
 
 Martin (Matrinoza)
 Systems Analysis Student | Python Developer | Linux Enthusiast
