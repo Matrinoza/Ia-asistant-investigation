@@ -1,0 +1,102 @@
+# 🧠 IA Assistant Investigation
+
+> **Autonomous AI research assistant powered by Python, LangChain, and LLMs — fully operable from the terminal.**
+
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![LangChain](https://img.shields.io/badge/LangChain-integrated-green)](https://www.langchain.com/)
+[![Docker](https://img.shields.io/badge/Docker-ready-2496ED)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-success)]()
+
+---
+
+# 🚀 Overview
+
+**IA Assistant Investigation** is a command-line intelligent assistant capable of conducting autonomous research using **LangChain**, **Python**, and **cloud-based GPT models**.  
+It can gather, analyze, and summarize information from the web, connect to APIs and databases, and manage multiple agents — all from a single terminal interface.
+
+---
+
+# 🧩 Features
+
+- 🤖 **Autonomous research agent** — queries, retrieves, and analyzes data on its own.  
+- 🌐 **Web and API integration** — connects to external sources dynamically.  
+- 🧱 **Modular architecture** — built with LangChain for flexible LLM workflows.  
+- 🐳 **Docker-ready** — deploy and run isolated agent environments easily.  
+- ⚙️ **Configurable via `.env`** — secure API keys and environment setup.  
+- 💬 **Terminal-based interface** — lightweight, fast, and distraction-free.
+
+---
+
+# 🧠 Tech Stack
+
+| Layer | Technology |
+  
+|-------|-------------|
+
+| Language | Python 3.10+ |
+
+| Framework | LangChain |
+
+| Model | OpenAI GPT / Cloud LLMs |
+
+| Containerization | Docker |
+
+| Data Handling | SQLite / Custom API integration |
+
+| Interface | CLI (Command Line Interface) |
+
+---
+
+# 🧰 Installation
+## Clone the repository
+git clone https://github.com/Matrinoza/Ia-asistant-investigation.git
+cd Ia-asistant-investigation
+
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate   # Linux / macOS
+venv\Scripts\activate      # Windows
+
+## Install dependencies
+pip install -r requirements.txt
+
+## Copy and configure environment variables
+cp .env.example .env
+nano .env
+---
+
+# 🧪 Usage
+## Run the assistant from terminal
+python main.py
+
+## Example session:
+> Research topic: "Recent advancements in quantum AI"
+> Searching web sources...
+> Summarizing results...
+> Draft ready: 1200 words summary saved to /reports/
+
+---
+
+# 🐳 Docker Setup
+## Build the container
+docker build -t ia-assistant .
+
+## Run the assistant in Docker
+docker run -it --env-file .env ia-assistant
+
+---
+
+# 🔍 Project Structure
+
+Ia-asistant-investigation/
+├── main.py
+├── modules/
+│   ├── agent.py
+│   ├── web_search.py
+│   ├── summarizer.py
+│   └── db_connector.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
